@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class ChatBox implements Runnable {
     private InputStream server;
 
-    private String nomeCli;
-    public ChatBox(InputStream server, String nomeCli) {
+    private String nome;
+    public ChatBox(InputStream server,String nome ) {
         this.server = server;
-        this.nomeCli= nomeCli;
+        this.nome= nome;
     }
 
     @Override
     public void run() {
         try (Scanner s = new Scanner(this.server)) {
             while (s.hasNextLine()) {
-                System.out.println(s.nextLine());
+                System.out.println(nome+": "+ s.nextLine());
             }
         }
 

@@ -30,14 +30,14 @@ public class ClienteTCP {
 
 
 
-
+      //  Socket cliente = new Socket("localhost", 8080);
         Socket cliente = new Socket("45.6.108.105", 8080);
         System.out.println(cliente);
 
         Scanner msg = new Scanner(System.in);
         PrintStream saida = new PrintStream(cliente.getOutputStream());
 
-        ChatBox chat = new ChatBox(cliente.getInputStream(), this.nome);
+        ChatBox chat = new ChatBox(cliente.getInputStream(),this.getNome());
         new Thread(chat).start();
 
         while (msg.hasNextLine()) {

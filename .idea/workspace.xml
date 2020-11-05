@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c547f299-b4e8-4d61-bc21-cb7923306c99" name="Default Changelist" comment="" />
+    <list default="true" id="c547f299-b4e8-4d61-bc21-cb7923306c99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chat/ChatBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ChatBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClienteTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteTCP.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +28,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jnAWjXkrUIYbxC0tKAjAyA8fpG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -80,11 +93,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604429515166</updated>
-      <workItem from="1604429518616" duration="7457000" />
+      <workItem from="1604429518616" duration="9408000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
