@@ -2,9 +2,7 @@
 
 import jdk.nashorn.internal.objects.annotations.Getter;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.security.DigestInputStream;
@@ -30,18 +28,24 @@ public class ClienteTCP {
 
 
 
-      //  Socket cliente = new Socket("localhost", 8080);
-        Socket cliente = new Socket("45.6.108.105", 8080);
+        Socket cliente = new Socket("localhost", 8080);
+      //  Socket cliente = new Socket("45.6.108.105", 8080);
+
+        ObjectOutputStream oos = new ObjectOutputStream(cliente.getOutputStream());
+        Obj obj = new Obj();
+        obj.y=this.getNome();
+        oos.writeObject(obj);
+
         System.out.println(cliente);
 
         Scanner msg = new Scanner(System.in);
         PrintStream saida = new PrintStream(cliente.getOutputStream());
 
-        ChatBox chat = new ChatBox(cliente.getInputStream(),this.getNome());
+        ChatBox chat = new ChatBox(cliente.getInputStream());
         new Thread(chat).start();
 
         while (msg.hasNextLine()) {
-            saida.println(msg.nextLine());
+            saida.println(this.getNome()+": "+ msg.nextLine());
         }
 
 

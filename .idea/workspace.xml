@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c547f299-b4e8-4d61-bc21-cb7923306c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ChatBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ChatBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chat/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ChatServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClienteTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteTCP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerTCP.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +46,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -93,8 +95,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604429515166</updated>
-      <workItem from="1604429518616" duration="9408000" />
+      <workItem from="1604429518616" duration="14228000" />
     </task>
+    <task id="LOCAL-00001" summary="adicionando nome no chat">
+      <created>1604603254760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604603254761</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,5 +120,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adicionando nome no chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionando nome no chat" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ServerTCP.java</url>
+          <line>39</line>
+          <properties class="ServerTCP" method="distribuiMensagem">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

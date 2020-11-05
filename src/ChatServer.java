@@ -20,6 +20,7 @@ public class ChatServer implements Runnable {
         try(Scanner s = new Scanner(this.cliente.getInputStream())) {
             while (s.hasNextLine()) {
                 server.distribuiMensagem(cliente,s.nextLine());
+
             }
         } catch (IOException e) {
             e.printStackTrace();
