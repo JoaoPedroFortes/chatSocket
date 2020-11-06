@@ -8,12 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c547f299-b4e8-4d61-bc21-cb7923306c99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chat_jar/Chat.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Chat_jar/Chat.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClienteTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteTCP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServerTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerTCP.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604429515166</updated>
-      <workItem from="1604429518616" duration="33089000" />
+      <workItem from="1604429518616" duration="33597000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando nome no chat">
       <created>1604603254760</created>
@@ -130,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604698181448</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="uiuiui 2">
+      <created>1604699856706</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604699856706</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +156,8 @@
     <MESSAGE value="Adição de mensagens privadas" />
     <MESSAGE value="Adição de mensagens privadas-2" />
     <MESSAGE value="uiui" />
-    <option name="LAST_COMMIT_MESSAGE" value="uiui" />
+    <MESSAGE value="uiuiui 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="uiuiui 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -173,6 +177,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ClienteTCP.java</url>
+          <line>27</line>
+          <properties class="ClienteTCP" method="exec">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ServerTCP.java</url>
