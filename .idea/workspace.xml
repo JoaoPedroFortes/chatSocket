@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClienteTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteTCP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServerTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerTCP.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604429515166</updated>
-      <workItem from="1604429518616" duration="31498000" />
+      <workItem from="1604429518616" duration="33089000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando nome no chat">
       <created>1604603254760</created>
@@ -122,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604691094381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="uiui">
+      <created>1604698181448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604698181448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,14 +152,15 @@
     <MESSAGE value=" filtrando nome no chat" />
     <MESSAGE value="Adição de mensagens privadas" />
     <MESSAGE value="Adição de mensagens privadas-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adição de mensagens privadas-2" />
+    <MESSAGE value="uiui" />
+    <option name="LAST_COMMIT_MESSAGE" value="uiui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ServerTCP.java</url>
-          <line>73</line>
+          <line>71</line>
           <properties class="ServerTCP" method="distribuiParaUm">
             <option name="EMULATED" value="true" />
           </properties>

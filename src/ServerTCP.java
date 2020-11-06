@@ -36,16 +36,16 @@ public class ServerTCP {
 
             for (String id : map.keySet()) {
                 if(id.equals(nome.y)){
-
+                    cliente.close();
+                    break;
                 }
             }
             map.put(nome.y, cliente);
-
-
             System.out.println(clientes.toString());
             ChatServer cs = new ChatServer(cliente, this, nome.y);
             System.out.println();
             new Thread(cs).start();
+
         }
 
     }

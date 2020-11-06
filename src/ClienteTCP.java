@@ -6,6 +6,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.security.DigestInputStream;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ClienteTCP {
@@ -27,9 +28,17 @@ public class ClienteTCP {
     public void exec(String[] args) throws Exception {
 
 
+        Usuarios us = new Usuarios();
+        us.clientes.add(this);
 
-       Socket cliente = new Socket("localhost", 8080);
-       //Socket cliente = new Socket("45.6.108.105", 8080);
+        ArrayList<ClienteTCP> usuarios = us.clientes;
+        for(ClienteTCP usuario : usuarios){
+            if(usuario.getNome().equals(this.getNome())){
+                throw new Exception("nome ja usado");
+            }
+        }
+       //Socket cliente = new Socket("localhost", 8080);
+       Socket cliente = new Socket("45.6.108.105", 8080);
 
         ObjectOutputStream oos = new ObjectOutputStream(cliente.getOutputStream());
         Obj obj = new Obj();
