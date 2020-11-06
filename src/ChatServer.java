@@ -8,10 +8,12 @@ public class ChatServer implements Runnable {
 
     private Socket cliente;
     private ServerTCP server;
+    String nome;
 
-    public ChatServer(Socket cliente, ServerTCP server) {
+    public ChatServer(Socket cliente, ServerTCP server, String nome) {
         this.cliente = cliente;
         this.server = server;
+        this.nome = nome;
     }
 
     @Override
@@ -22,7 +24,7 @@ public class ChatServer implements Runnable {
                 server.distribuiMensagem(cliente,s.nextLine());
 
             }
-        } catch (IOException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

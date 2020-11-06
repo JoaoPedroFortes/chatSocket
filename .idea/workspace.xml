@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c547f299-b4e8-4d61-bc21-cb7923306c99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chat/ChatBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ChatBox.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ChatServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ClienteTCP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chat/ServerTCP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClienteTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteTCP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServerTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerTCP.java" afterDir="false" />
@@ -95,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604429515166</updated>
-      <workItem from="1604429518616" duration="14228000" />
+      <workItem from="1604429518616" duration="23314000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando nome no chat">
       <created>1604603254760</created>
@@ -104,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604603254761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" filtrando nome no chat">
+      <created>1604608203806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604608203806</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,18 +127,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionando nome no chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionando nome no chat" />
+    <MESSAGE value=" filtrando nome no chat" />
+    <option name="LAST_COMMIT_MESSAGE" value=" filtrando nome no chat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ServerTCP.java</url>
-          <line>39</line>
-          <properties class="ServerTCP" method="distribuiMensagem">
+          <line>66</line>
+          <properties class="ServerTCP" method="distribuiParaUm">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
