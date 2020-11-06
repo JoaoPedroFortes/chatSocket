@@ -34,7 +34,13 @@ public class ServerTCP {
             ObjectInputStream ois = new ObjectInputStream(cliente.getInputStream());
             Obj nome = (Obj) ois.readObject();
 
+            for (String id : map.keySet()) {
+                if(id.equals(nome.y)){
+
+                }
+            }
             map.put(nome.y, cliente);
+
 
             System.out.println(clientes.toString());
             ChatServer cs = new ChatServer(cliente, this, nome.y);

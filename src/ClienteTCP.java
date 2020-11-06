@@ -28,8 +28,8 @@ public class ClienteTCP {
 
 
 
-        Socket cliente = new Socket("localhost", 8080);
-      // Socket cliente = new Socket("45.6.108.105", 8080);
+       Socket cliente = new Socket("localhost", 8080);
+       //Socket cliente = new Socket("45.6.108.105", 8080);
 
         ObjectOutputStream oos = new ObjectOutputStream(cliente.getOutputStream());
         Obj obj = new Obj();
