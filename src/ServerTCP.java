@@ -13,7 +13,7 @@ public class ServerTCP {
 
     private ArrayList<Socket> clientes;
     private ArrayList<String> nomeClientes;
-    private Map<String,Socket> map;
+    private Map<String, Socket> map;
     private int porta;
 
     public ServerTCP(int porta) {
@@ -34,7 +34,7 @@ public class ServerTCP {
             ObjectInputStream ois = new ObjectInputStream(cliente.getInputStream());
             Obj nome = (Obj) ois.readObject();
 
-            map.put(nome.y,cliente);
+            map.put(nome.y, cliente);
 
             System.out.println(clientes.toString());
             ChatServer cs = new ChatServer(cliente, this, nome.y);
@@ -45,7 +45,6 @@ public class ServerTCP {
     }
 
     public void distribuiMensagem(Socket clienteQueEnviou, String msg) throws IOException, ClassNotFoundException {
-        System.out.println(msg);
         if (msg.contains("//")) {
             distribuiParaUm(clienteQueEnviou, msg);
         } else {
@@ -68,24 +67,27 @@ public class ServerTCP {
         String[] array = new String[1];
         array = msg.split("//");
 
-        for(String nome: map.keySet()) {
-            if(nome.equals(array[1])){
-            Socket cliente = map.get(nome);
-            try {
-                PrintStream ps = new PrintStream(cliente.getOutputStream());
-                ps.println("MSG PRIVADA DE "+array[0]+":" + array[2]);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        for (String nome : map.keySet()) {
+            if (nome.equals(array[1])) {
+                Socket cliente = map.get(nome);
+                if (!cliente.equals(clienteQueEnviou)) {
+                    try {
+                        PrintStream ps = new PrintStream(cliente.getOutputStream());
+                        ps.println("MSG PRIVADA DE " + array[0].toUpperCase() + ":" + array[2]);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         }
 
     }
-        public static void main (String[]args) throws Exception {
-            try {
-                new ServerTCP(8080).exec(args);
-            } catch (Exception e) {
-                System.out.println(e);
-            }
+
+    public static void main(String[] args) throws Exception {
+        try {
+            new ServerTCP(8080).exec(args);
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
+}

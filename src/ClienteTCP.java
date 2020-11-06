@@ -44,6 +44,7 @@ public class ClienteTCP {
         ChatBox chat = new ChatBox(cliente.getInputStream());
         new Thread(chat).start();
 
+
         while (msg.hasNextLine()) {
             saida.println(this.getNome()+": "+ msg.nextLine());
         }
