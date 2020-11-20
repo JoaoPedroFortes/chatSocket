@@ -3,9 +3,9 @@ import java.util.ArrayList;
 
 public class Usuarios {
 
-     ArrayList<ClienteTCP> clientes;
+     ArrayList<String> clientesNome;
 
     public Usuarios() {
-        this.clientes = new ArrayList<>();
+        this.clientesNome = new ArrayList<>();
     }
 }

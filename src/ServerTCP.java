@@ -1,18 +1,19 @@
 
-import com.sun.media.jfxmediaimpl.HostUtils;
+
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Date;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class ServerTCP {
 
     private ArrayList<Socket> clientes;
-    private ArrayList<String> nomeClientes;
+
+
     private Map<String, Socket> map;
     private int porta;
 
@@ -20,6 +21,7 @@ public class ServerTCP {
         this.map = new HashMap<String, Socket>();
         this.clientes = new ArrayList<Socket>();
         this.porta = porta;
+
     }
 
     public void exec(String[] args) throws Exception {
@@ -29,22 +31,31 @@ public class ServerTCP {
 
         while (true) {
             Socket cliente = server.accept();
-            this.clientes.add(cliente);
+
 
             ObjectInputStream ois = new ObjectInputStream(cliente.getInputStream());
             Obj nome = (Obj) ois.readObject();
 
-            for (String id : map.keySet()) {
-                if(id.equals(nome.y)){
-                    cliente.close();
-                    break;
-                }
+            if (map.containsKey(nome.y)) {
+                System.out.println("nome ja existe");
+
+                cliente.getOutputStream().write("404\0".getBytes());
+                cliente.getOutputStream().flush();
+                cliente.close();
+                System.out.println(cliente.isClosed());
+                System.out.println(clientes.toString());
+                continue;
             }
+            cliente.getOutputStream().write("200\0".getBytes());
+            cliente.getOutputStream().flush();
+
+            this.clientes.add(cliente);
             map.put(nome.y, cliente);
             System.out.println(clientes.toString());
             ChatServer cs = new ChatServer(cliente, this, nome.y);
             System.out.println();
             new Thread(cs).start();
+
 
         }
 
@@ -91,6 +102,7 @@ public class ServerTCP {
 
     public static void main(String[] args) throws Exception {
         try {
+
             new ServerTCP(8080).exec(args);
         } catch (Exception e) {
             System.out.println(e);
